@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Large Type</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  textarea {
+    /* reset */
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+
+    font-size: 48px;
+    font-family: "Yu Mincho", "YuMincho";
+  }
+
+  button {
+    display: block;
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+    width: 4em;
+    height: 4em;
+    border-radius: 2em;
+  }
+</style>
+
+<textarea placeholder="Input Text"></textarea>
+<button data-clipboard-target="textarea">Copy</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+<script>new ClipboardJS('button');</script>
